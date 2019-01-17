@@ -48,6 +48,7 @@ class App extends Component{
         <Modal show={this.state.modal} onClose={this.toggleModal}> 
             <img style={{objectFit: 'cover', width:'100%'}} src={this.state.img}/>  
             <div className="detail-cont">
+            <div onClick={this.toggleModal}><i className="fa fa-times close"></i> </div>
               <h1 className="title">{this.state.title}</h1>
               <div style={{color:'#666666'}}>{this.state.store}</div>
               <div className="rating-cont">
